@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.testdrawer2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_newReminder"
+            app:destination="@id/newReminder" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.testdrawer2.ui.calendar.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_nav_calendar_to_newReminder"
+            app:destination="@id/newReminder" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.testdrawer2.ui.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/newReminder"
+        android:name="com.example.testdrawer2.ui.new_reminder.NewReminder"
+        android:label="new_reminder_fragment"
+        tools:layout="@layout/new_reminder_fragment" >
+        <action
+            android:id="@+id/action_newReminder_to_nav_home"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="Id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

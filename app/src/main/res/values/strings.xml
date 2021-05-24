@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Reminder app</string>
+    <string name="nav_header_subtitle">mindaugas.punys@ktu.edu</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="storage_permission_rationale">The app needs to read and write image files in the external storage.</string>
+    <string name="storage_permission_rationale_title">Storage Permission</string>
+    <string name="storage_permission_not_granted">Write to external storage permission not granted.</string>
+    <string name="open_settings">Settings</string>
+</resources>

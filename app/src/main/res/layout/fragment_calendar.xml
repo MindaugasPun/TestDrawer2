@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.calendar.CalendarFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:listitem="@layout/item_reminder" />
+
+        <EditText
+            android:id="@+id/edt_sort_day2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="dd"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/edt_sort_day1"
+            app:layout_constraintTop_toTopOf="@+id/edt_sort_month2" />
+
+        <EditText
+            android:id="@+id/edt_sort_month2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="mm"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/edt_sort_month1"
+            app:layout_constraintTop_toTopOf="@+id/edt_sort_year2" />
+
+        <EditText
+            android:id="@+id/edt_sort_year2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="yyyy"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/edt_sort_year1"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:text="From:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="To:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/edt_sort_day1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:hint="dd"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/edt_sort_month1"
+            app:layout_constraintTop_toTopOf="@+id/edt_sort_month1" />
+
+        <EditText
+            android:id="@+id/edt_sort_month1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:hint="mm"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/edt_sort_year1"
+            app:layout_constraintTop_toTopOf="@+id/edt_sort_year1" />
+
+        <EditText
+            android:id="@+id/edt_sort_year1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:hint="yyyy"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <Button
+            android:id="@+id/btn_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Sort"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_sort_day2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edt_sort_day1"
+            app:layout_constraintTop_toTopOf="@+id/edt_sort_day1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
